@@ -1,26 +1,19 @@
-# Hey, I'm Fadri.
+
 
 <div align="center">
 
 <img src="./alpine.svg" width="100%">
 
-### Computer Scientist (EFZ) in Application Development 
-
-*In Training, 4th year*
-
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/YOUR-USERNAME)
-[![Switzerland](https://img.shields.io/badge/Switzerland-🇨🇭-red?style=flat-square)](#)
+### Hey, I'm Fadri
+### Computer Scientistin in Application Development and coding since ~5 years
 
 </div>
 
 ---
 
-## 🛠️ Technologies & Tools
-
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=cs,dotnet,python,html,css,js,git,github,vscode,linux&theme=dark" alt="Technologies and tools" />
-
+![My Skills](https://go-skill-icons.vercel.app/api/icons?i=ts,js,python,cs,html,css,tailwind,react,vite,express,mysql,firebase,cloudflare,git,github,gitlab,npm,pnpm,docker,podman,windows,linux,raspberrypi,capacitor&perline=8)
 </div>
 
 
