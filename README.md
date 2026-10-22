@@ -19,6 +19,14 @@
 
 
 ---
+<p align="center">
+  <a href="https://www.linkedin.com/in/fadri-ziegler/">
+    <img src="https://go-skill-icons.vercel.app/api/icons?i=linkedin" />
+  </a>
+    <a href="https://steamcommunity.com/profiles/76561199143112548/">
+    <img src="https://go-skill-icons.vercel.app/api/icons?i=steam" />
+  </a>
+</p>
 
 <div align="center">
 
