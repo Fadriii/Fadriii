@@ -1,0 +1,164 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="320" viewBox="0 0 1000 320">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#101a36"/>
+      <stop offset="55%" stop-color="#41466e"/>
+      <stop offset="100%" stop-color="#b8a8cf"/>
+    </linearGradient>
+    <linearGradient id="snow" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#b8c9e0"/>
+    </linearGradient>
+    <linearGradient id="rock" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#71819d"/>
+      <stop offset="100%" stop-color="#29344f"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+    <clipPath id="scene">
+      <rect width="1000" height="320" rx="12"/>
+    </clipPath>
+    <g id="star">
+      <circle r="1.5" fill="#fff"/>
+      <circle r="4" fill="#fff" opacity=".25" filter="url(#glow)"/>
+    </g>
+    <g id="flake" fill="#fff">
+      <circle r="1.6"/>
+    </g>
+  </defs>
+
+  <g clip-path="url(#scene)">
+    <rect width="1000" height="320" fill="url(#sky)"/>
+
+    <circle cx="820" cy="64" r="23" fill="#eee9ff" opacity=".85"/>
+    <circle cx="830" cy="55" r="23" fill="#353c60"/>
+
+    <!-- Twinkling stars -->
+    <g>
+      <use href="#star" x="65" y="42"/>
+      <use href="#star" x="151" y="85"/>
+      <use href="#star" x="233" y="35"/>
+      <use href="#star" x="319" y="72"/>
+      <use href="#star" x="404" y="29"/>
+      <use href="#star" x="501" y="60"/>
+      <use href="#star" x="590" y="35"/>
+      <use href="#star" x="675" y="89"/>
+      <use href="#star" x="935" y="37"/>
+      <use href="#star" x="899" y="108"/>
+      <use href="#star" x="105" y="125"/>
+      <use href="#star" x="277" y="113"/>
+      <use href="#star" x="553" y="112"/>
+      <use href="#star" x="742" y="32"/>
+      <animate attributeName="opacity" values="1;.55;1" dur="3s" repeatCount="indefinite"/>
+    </g>
+
+    <g fill="#d9e4ff" opacity=".18">
+      <ellipse cx="190" cy="104" rx="72" ry="12"/>
+      <ellipse cx="225" cy="98" rx="45" ry="16"/>
+      <ellipse cx="645" cy="128" rx="85" ry="11"/>
+      <ellipse cx="680" cy="120" rx="49" ry="16"/>
+    </g>
+
+    <!-- Slow drifting clouds -->
+    <g fill="#d8d5ec" opacity=".35">
+      <g>
+        <ellipse cx="205" cy="104" rx="48" ry="9"/>
+        <ellipse cx="224" cy="98" rx="29" ry="13"/>
+        <animateTransform attributeName="transform" type="translate"
+          values="-25 0;25 0;-25 0" dur="22s" repeatCount="indefinite"/>
+      </g>
+      <g>
+        <ellipse cx="630" cy="142" rx="56" ry="8"/>
+        <ellipse cx="650" cy="136" rx="33" ry="12"/>
+        <animateTransform attributeName="transform" type="translate"
+          values="20 0;-25 0;20 0" dur="28s" repeatCount="indefinite"/>
+      </g>
+    </g>
+
+    <!-- Distant mountain range -->
+    <path d="M0 242 L92 170 L142 207 L231 135 L305 204
+      L388 125 L471 216 L554 151 L631 208 L721 133
+      L802 205 L884 146 L1000 220 L1000 320 L0 320Z"
+      fill="#697694" opacity=".8"/>
+
+    <!-- Main alpine peaks -->
+    <path d="M0 284 L112 183 L174 230 L292 98 L357 171
+      L455 36 L554 191 L637 113 L711 216 L825 84
+      L922 202 L1000 143 L1000 320 L0 320Z"
+      fill="url(#rock)"/>
+
+    <!-- Snow on the Matterhorn-like peak -->
+    <path d="M292 98 L260 136 L281 130 L292 146
+      L307 127 L322 146 L340 147 L357 171
+      L330 155 L314 157 L298 139 L284 150 L273 139Z"
+      fill="url(#snow)"/>
+
+    <path d="M455 36 L411 104 L432 91 L446 109
+      L461 84 L477 107 L494 127 L481 92 L469 72Z"
+      fill="url(#snow)"/>
+
+    <path d="M825 84 L789 133 L808 124 L823 143
+      L839 122 L857 142 L876 160 L864 128 L845 108Z"
+      fill="url(#snow)"/>
+
+    <!-- Cool shadowed faces -->
+    <path d="M455 36 L481 92 L494 127 L461 84Z"
+      fill="#8492b1" opacity=".7"/>
+    <path d="M825 84 L845 108 L864 128 L876 160 L841 136Z"
+      fill="#8693b0" opacity=".65"/>
+    <path d="M292 98 L314 157 L357 171 L322 146 L307 127Z"
+      fill="#8d9ab5" opacity=".65"/>
+
+    <!-- Foreground ridges -->
+    <path d="M0 279 L124 242 L210 263 L330 224
+      L440 269 L553 229 L673 270 L786 222
+      L898 265 L1000 228 L1000 320 L0 320Z"
+      fill="#34445a"/>
+
+    <path d="M0 300 Q150 271 295 296
+      T575 292 T830 285 T1000 291 L1000 320 L0 320Z"
+      fill="#24394a"/>
+
+    <!-- Falling snow -->
+    <g fill="#fff" opacity=".8">
+      <circle cx="60" cy="-15" r="2">
+        <animate attributeName="cy" from="-15" to="330" dur="9s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="180" cy="-80" r="1.5">
+        <animate attributeName="cy" from="-80" to="330" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="315" cy="-30" r="2">
+        <animate attributeName="cy" from="-30" to="330" dur="10s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="520" cy="-120" r="1.5">
+        <animate attributeName="cy" from="-120" to="330" dur="13s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="690" cy="-40" r="2">
+        <animate attributeName="cy" from="-40" to="330" dur="11s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="765" cy="-100" r="1.5">
+        <animate attributeName="cy" from="-100" to="330" dur="14s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="955" cy="-65" r="2">
+        <animate attributeName="cy" from="-65" to="330" dur="10s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Swiss flag on a pole in the foreground -->
+    <g transform="translate(900 220)">
+      <rect x="0" y="0" width="4" height="83" rx="2" fill="#d8deeb"/>
+      <ellipse cx="2" cy="84" rx="13" ry="3" fill="#101b2d" opacity=".5"/>
+      <g>
+        <path d="M4 4 L70 4 L70 45 L4 45Z" fill="#d71935"/>
+        <path d="M4 4 L70 4 L70 45 L4 45Z" fill="#d71935"/>
+        <path d="M31 11 L43 11 L43 19 L53 19 L53 30
+          L43 30 L43 38 L31 38 L31 30 L21 30
+          L21 19 L31 19Z" fill="#fff"/>
+        <animateTransform attributeName="transform" type="skewX"
+          values="0;3;0;-2;0" dur="3s" repeatCount="indefinite"/>
+      </g>
+    </g>
+  </g>
+</svg>
