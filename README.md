@@ -1,10 +1,10 @@
-# Hey, I'm Fadri! 🇨🇭
+# Hey, I'm Fadri.
 
 <div align="center">
 
 <img src="./alpine.svg" width="100%">
 
-### Informatiker EFZ Applikationsentwicklung 💻
+### Computer Scientist (EFZ) in Application Development 
 
 *In Training, 4th year*
 
